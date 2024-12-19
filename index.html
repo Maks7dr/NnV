@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>С Новым годом, Надежда!</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+    </div>
     <header class="header">
-      <h1>С Новым годом, Надежда!</h1>
-      <p>
-        Этот сайт я создал для тебя, чтобы показать, как ты для меня дорога.
-      </p>
+      <div class="container">
+        <h1>С Новым годом, Надежда!</h1>
+        <p>
+          Этот сайт я создал для тебя, чтобы показать, как ты для меня дорога.
+        </p>
+      </div>
     </header>
 
     <main>
-      <section class="gallery">
+      <section class="gallery container">
         <h2>Наши лучшие моменты</h2>
         <div class="photos">
           <img src="photo1.jpg" alt="Момент 1" />
@@ -24,7 +34,7 @@
         </div>
       </section>
 
-      <section class="reasons">
+      <section class="reasons container">
         <h2>10 причин, почему я тебя люблю</h2>
         <ul>
           <li>Твоя улыбка делает мой день светлее.</li>
@@ -34,7 +44,7 @@
         </ul>
       </section>
 
-      <section class="video">
+      <section class="video container">
         <h2>Наше видео-сокровище</h2>
         <video controls>
           <source src="video.mp4" type="video/mp4" />
@@ -42,7 +52,7 @@
         </video>
       </section>
 
-      <section class="wishes">
+      <section class="wishes container">
         <h2>Мои пожелания</h2>
         <p>
           Я желаю тебе счастья, любви и исполнения всех твоих мечт в 2024 году.
@@ -53,7 +63,9 @@
     </main>
 
     <footer class="footer">
-      <p>С любовью, Максим.</p>
+      <div class="container">
+        <p>С любовью, Максим.</p>
+      </div>
     </footer>
   </body>
 </html>

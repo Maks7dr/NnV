@@ -1,11 +1,99 @@
-/* styles.css */
+/* #region Base */
+
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   background: linear-gradient(to bottom, #1e3c72, #2a5298);
   color: #fff;
-  text-align: center;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* #endregion */
 
 .header {
   padding: 20px;
@@ -71,4 +159,91 @@ body {
 
 .footer p {
   font-size: 1.1em;
+}
+
+/* snow */
+/* Фон сайта */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: white;
+  background: url('https://images.unsplash.com/photo-1544829096-fb5ef42d895f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080')
+    no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Анимация снега */
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.8;
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+}
+
+.snowflake:nth-child(2) {
+  font-size: 2em;
+  left: 25%;
+  animation-duration: 12s;
+}
+
+.snowflake:nth-child(3) {
+  font-size: 1.2em;
+  left: 75%;
+  animation-duration: 8s;
+}
+
+.snowflake:nth-child(4) {
+  font-size: 1.8em;
+  left: 10%;
+  animation-duration: 14s;
+}
+
+.snowflake:nth-child(5) {
+  font-size: 1.4em;
+  left: 90%;
+  animation-duration: 11s;
+}
+
+.snowflake:nth-child(6) {
+  font-size: 1.6em;
+  left: 40%;
+  animation-duration: 9s;
+}
+
+/* Анимация падения */
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(20px);
+  }
+}
+
+/* Анимация покачивания */
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
 }
