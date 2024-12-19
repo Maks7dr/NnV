@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #f7d794;
+}
+
+.header p {
+  margin: 10px 0 20px;
+  font-size: 1.2em;
+}
+
+.gallery,
+.reasons,
+.video,
+.wishes {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.photos img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: transform 0.3s;
+}
+
+.photos img:hover {
+  transform: scale(1.2);
+}
+
+.reasons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons li {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.video video {
+  width: 80%;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.footer p {
+  font-size: 1.1em;
+}
