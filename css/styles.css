@@ -95,27 +95,81 @@ address {
 
 /* #endregion */
 
-.header {
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
+/* #region Header */
+
+/* Хедер */
+
+.header-container {
+  border-radius: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header h1 {
+/* Текст с анимацией свечения */
+.glowing-text {
   font-size: 3em;
-  margin: 0;
-  color: #f7d794;
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ff6347,
+    0 0 30px #ff6347, 0 0 40px #ff4500, 0 0 50px #ff4500;
+  animation: glow 2s infinite alternate;
 }
 
-.header p {
-  margin: 10px 0 20px;
-  font-size: 1.2em;
+/* Анимация свечения текста */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ff6347,
+      0 0 30px #ff6347, 0 0 40px #ff4500, 0 0 50px #ff4500;
+  }
+  to {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ff6347,
+      0 0 40px #ff6347, 0 0 50px #ff4500, 0 0 60px #ff4500;
+  }
 }
+
+.header-nav {
+}
+.header-list {
+  display: flex;
+  gap: 15px;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ffdab9;
+  min-height: 50px;
+  background-color: transparent;
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ff6347,
+    0 0 30px #ff6347, 0 0 40px #ff4500, 0 0 50px #ff4500;
+  animation: glow 2s infinite alternate;
+}
+.header-link {
+  font-weight: 600;
+  line-height: 1.45;
+}
+.header-text {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #ffdab9;
+}
+
+/* #endregion */
 
 .gallery,
 .reasons,
 .video,
 .wishes {
-  margin: 20px 0;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
@@ -163,15 +217,9 @@ address {
 
 /* snow */
 /* Фон сайта */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  color: white;
-  background: url('https://images.unsplash.com/photo-1544829096-fb5ef42d895f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080')
-    no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
+
+.main {
+  background-color: #ff8383;
 }
 
 /* Анимация снега */
