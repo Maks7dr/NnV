@@ -352,6 +352,7 @@ address {
   border: 2px solid #ffdab9;
   overflow: hidden;
   max-width: 340px;
+  max-height: 477px;
   object-fit: contain;
 }
 
