@@ -15,7 +15,7 @@
       <div class="snowflake">❅</div>
       <div class="snowflake">❆</div>
     </div>
-    <header class="new-year-header">
+    <header class="header">
       <div class="container header-container">
         <div class="header-wrapper">
           <h1 class="glowing-text">С Новым годом, Надежда!</h1>
@@ -31,7 +31,7 @@
                 <a class="header-link" href="#">Класные моменты</a>
               </li>
               <li class="header-item">
-                <a class="header-link" href="#">Санта Клауса</a>
+                <a class="header-link" href="#">Санта Клаус</a>
               </li>
             </ul>
           </nav>
@@ -43,15 +43,21 @@
     </header>
     <main class="main">
       <section class="gallery container">
-        <h2>Наши лучшие моменты</h2>
-        <div class="photos">
-          <img src="photo1.jpg" alt="Момент 1" />
-          <img src="photo2.jpg" alt="Момент 2" />
-          <img src="photo3.jpg" alt="Момент 3" />
-        </div>
+        <h2 class="gallery-title">Наши лучшие моменты</h2>
+        <ul class="gallery-list">
+          <li class="gallery-item">
+            <img class="gallery-img" src="./img/foto1.jpeg" alt="Момент 1" />
+          </li>
+          <li class="gallery-item">
+            <img src="./img/foto1.jpeg" alt="Момент 1" />
+          </li>
+          <li class="gallery-item">
+            <img src="./img/foto1.jpeg" alt="Момент 1" />
+          </li>
+        </ul>
       </section>
 
-      <section class="reasons container">
+      <section class="reasons container hide">
         <h2>10 причин, почему я тебя люблю</h2>
         <ul>
           <li>Твоя улыбка делает мой день светлее.</li>
@@ -61,15 +67,18 @@
         </ul>
       </section>
 
-      <section class="video container">
+      <section class="video container hide">
         <h2>Наше видео-сокровище</h2>
-        <video controls>
-          <source src="video.mp4" type="video/mp4" />
+        <video class="controls">
+          <source
+            src="./video/WhatsApp Video 2024-12-20 at 00.11.58.mp4"
+            type="video/mp4"
+          />
           Ваш браузер не поддерживает видео.
         </video>
       </section>
 
-      <section class="wishes container">
+      <section class="wishes container hide">
         <h2>Мои пожелания</h2>
         <p>
           Я желаю тебе счастья, любви и исполнения всех твоих мечт в 2024 году.
@@ -79,7 +88,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container">
         <p>С любовью, Максим.</p>
       </div>
