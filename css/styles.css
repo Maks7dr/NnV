@@ -301,7 +301,7 @@ address {
   border-radius: 20px;
   border: 2px solid #ffdab9;
   overflow: hidden;
-  min-width: 335px;
+  min-width: 340px;
 }
 .gallery-img {
 }
@@ -351,7 +351,8 @@ address {
   border-radius: 20px;
   border: 2px solid #ffdab9;
   overflow: hidden;
-  max-width: 335px;
+  max-width: 340px;
+  object-fit: contain;
 }
 
 /* #endregion */
