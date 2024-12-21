@@ -22,13 +22,13 @@ body {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
   .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -37,21 +37,33 @@ body {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 0 100px;
   }
+}
+
+.title {
+  font-size: 1.2em;
+  color: #ffdab9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main {
+  background-color: #ff8383;
 }
 
 /* reset */
@@ -273,16 +285,10 @@ address {
 
 .gallery {
 }
-.gallery-title {
-  font-size: 1.2em;
-  margin-top: 15px;
-  color: #ffdab9;
-  margin-bottom: 20px;
-  text-align: center;
-}
+
 .gallery-list {
   display: flex;
-  gap: 15px;
+  gap: 30px;
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -300,59 +306,39 @@ address {
 .gallery-img {
 }
 /* #endregion */
-.controls {
-  width: 500px;
-  border-radius: 10px;
-  border: 3px solid #fff;
-  object-fit: cover;
-}
 
-.gallery,
-.reasons,
-.video,
-.wishes {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
+/* #region Reasons */
 
-.photos img {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  transition: transform 0.3s;
+.reasons {
 }
-
-.photos img:hover {
-  transform: scale(1.2);
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-.reasons ul {
-  list-style: none;
-  padding: 0;
-}
-
-.reasons li {
-  margin: 10px 0;
+.reasons-item {
   font-size: 1.2em;
-  color: #ffd700;
+  color: #ffefe1;
 }
 
-.footer {
-  margin-top: 20px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
+/* #endregion */
+
+/* #region Moments */
+
+.moments {
+}
+.moments-list {
+  display: flex;
+  gap: 30px;
+}
+.moments-list::-webkit-scrollbar {
+  display: none;
+}
+.moments-video {
+  border-radius: 20px;
+  border: 2px solid #ffdab9;
+  overflow: hidden;
+  max-width: 335px;
 }
 
-.footer p {
-  font-size: 1.1em;
-}
-
-/* snow */
-/* Фон сайта */
-
-.main {
-  background-color: #ff8383;
-}
+/* #endregion */
