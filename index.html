@@ -17,21 +17,28 @@
     </div>
     <header class="header">
       <div class="container header-container">
+        <button id="musicButton" class="btn">
+          Нажми на Дедушку Мороз здесь
+        </button>
+        <audio
+          id="jingleBells"
+          src="./audio/Bobby Helms - Jingle Bell.mp3"
+        ></audio>
         <div class="header-wrapper">
           <h1 class="glowing-text">С Новым годом, Надежда!</h1>
           <nav class="header-nav">
             <ul class="header-list">
               <li class="header-item">
-                <a class="header-link" href="#">Фоточки</a>
+                <a class="header-link" href="#gallery">Фоточки</a>
               </li>
               <li class="header-item">
-                <a class="header-link" href="#">Видео</a>
+                <a class="header-link" href="#moments">Видео</a>
               </li>
               <li class="header-item">
-                <a class="header-link" href="#">Класные моменты</a>
+                <a class="header-link" href="#reasons">Класные моменты</a>
               </li>
               <li class="header-item">
-                <a class="header-link" href="#">Санта Клаус</a>
+                <a class="header-link" href="#wishes">Санта Клаус</a>
               </li>
             </ul>
           </nav>
@@ -42,7 +49,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="gallery container section">
+      <section id="gallery" class="gallery container section">
         <h2 class="title">Наши лучшие моменты</h2>
         <ul class="gallery-list">
           <li class="gallery-item">
@@ -75,7 +82,7 @@
         </ul>
       </section>
 
-      <section class="reasons container section">
+      <section id="reasons" class="reasons container section">
         <h2 class="title">10 причин, почему я тебя люблю</h2>
         <ul class="reasons-list">
           <li class="reasons-item">
@@ -101,7 +108,7 @@
         </ul>
       </section>
 
-      <section class="moments container section">
+      <section id="moments" class="moments container section">
         <h2 class="title">Наше видео-сокровище</h2>
         <ul class="moments-list">
           <li class="moments-item">
@@ -134,21 +141,26 @@
         </ul>
       </section>
 
-      <section class="wishes container hide">
-        <h2>Мои пожелания</h2>
-        <p>
-          Я желаю тебе счастья, любви и исполнения всех твоих мечт в 2024 году.
-          Ты — самое главное в моей жизни, и я сделаю все, чтобы ты улыбалась
-          каждый день!
+      <section id="wishes" class="wishes section container">
+        <h2 class="title">Мои пожелания</h2>
+        <p class="wishes-text">
+          Любимая моя, с Новым годом! Желаю, чтобы этот год стал для нас еще
+          одной прекрасной страницей в книге нашей любви. Пусть каждый день
+          будет наполнен теплом, нежностью и счастьем, а наши чувства становятся
+          только сильнее. Ты – мое самое большое сокровище, и я благодарен
+          судьбе за каждую минуту, проведенную рядом с тобой. Я желаю тебе
+          счастья, любви и исполнения всех твоих мечт в 2024 году. Ты — самое
+          главное в моей жизни, и я сделаю все, чтобы ты улыбалась каждый день!
         </p>
       </section>
     </main>
 
-    <footer class="footer hide">
-      <div class="container">
+    <footer class="footer">
+      <div class="container section">
         <p>С любовью, Максим.</p>
       </div>
     </footer>
     <!-- <script src="./js/scroll.js"></script> -->
+    <script src="./js/music.js"></script>
   </body>
 </html>
